@@ -21,3 +21,28 @@ Verify:
 2147475528
 Time cost: 2.510295
 
+---
+
+Find the K-th max number - N: 33554432, K: 16
+kth3.py:43: DeprecationWarning: time.clock has been deprecated in Python 3.3 and will be removed from Python 3.8: use time.perf_counter or time.process_time instead
+  start_time = time.clock()
+kth3.py:54: DeprecationWarning: time.clock has been deprecated in Python 3.3 and will be removed from Python 3.8: use time.perf_counter or time.process_time instead
+  end_time = time.clock()
+Result:
+1073741155
+Time cost: 148.856046
+kth3.py:59: DeprecationWarning: time.clock has been deprecated in Python 3.3 and will be removed from Python 3.8: use time.perf_counter or time.process_time instead
+  start_time = time.clock()
+kth3.py:70: DeprecationWarning: time.clock has been deprecated in Python 3.3 and will be removed from Python 3.8: use time.perf_counter or time.process_time instead
+  end_time = time.clock()
+Result:
+1073741155
+Time cost: 15.910725
+kth3.py:75: DeprecationWarning: time.clock has been deprecated in Python 3.3 and will be removed from Python 3.8: use time.perf_counter or time.process_time instead
+  start_time = time.clock()
+kth3.py:77: DeprecationWarning: time.clock has been deprecated in Python 3.3 and will be removed from Python 3.8: use time.perf_counter or time.process_time instead
+  end_time = time.clock()
+Verify:
+1073741155
+Time cost: 18.625590
+
