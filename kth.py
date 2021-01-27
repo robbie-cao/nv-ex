@@ -29,6 +29,9 @@ if __name__ == '__main__':
     NN = 1000000
     N = 20000
     K = 10
+    NN = 100
+    N = 20
+    K = 4
     arr = random.sample(range(1, NN), N)
     print('Array:')
     print(arr)
@@ -46,9 +49,10 @@ if __name__ == '__main__':
     # 对合并分组排序，排序后数组第K项即为结果
     outputs2.sort(reverse=True)
     print('Result:')
-    print(outputs2[K])
+    print(outputs2[K - 1])
 
     arr.sort(reverse=True)
     print('Verify:')
-    print(arr[K])
+    print(arr)
+    print(arr[K - 1])
 

@@ -56,7 +56,7 @@ if __name__ == '__main__':
     outputs2.sort(reverse=True)
     end_time = time.clock()
     print('Result:')
-    print(outputs2[K])
+    print(outputs2[K - 1])
     print('Time cost: %f' % (end_time - start_time))
 
     # Algorith 2) - 分组排序(单核串行)
@@ -73,7 +73,7 @@ if __name__ == '__main__':
     info(res_a)
     end_time = time.clock()
     print('Result:')
-    print(res_a[K])
+    print(res_a[K - 1])
     print('Time cost: %f' % (end_time - start_time))
 
     # Algorith 3) - 整体排序
@@ -81,6 +81,6 @@ if __name__ == '__main__':
     arr.sort(reverse=True)
     end_time = time.clock()
     print('Verify:')
-    print(arr[K])
+    print(arr[K - 1])
     print('Time cost: %f' % (end_time - start_time))
 
