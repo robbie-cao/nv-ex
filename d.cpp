@@ -1,29 +1,31 @@
-/*
- * =====================================================================================
- *
- *       Filename:  d.cpp
- *
- *    Description:
- *
- *        Version:  1.0
- *        Created:  01/21/2021 14:48:44
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  YOUR NAME (),
- *   Organization:
- *
- * =====================================================================================
- */
-#include <stdlib.h>
+#include <iostream>
+
+using namespace std;
 
 class A {
-    int width;
- public:
-    int getWidth() const;
+    public:
+        virtual ~A() {}
 };
 
-int foo(const A& a)
+class B : public A {
+    public:
+        void foo() {}
+};
+
+int main(int argc, char *argv[])
 {
-    return a.getWidth();
+    A *paa = new A;
+    A *pab = new B;
+    B *pb;
+
+    pb = dynamic_cast<B *>(paa);
+    if (pb == NULL) {
+        cout << "paa -> pb fail" << endl;
+    }
+    pb = dynamic_cast<B *>(pab);
+    if (pb == NULL) {
+        cout << "pab -> pb fail" << endl;
+    }
+
+    return 0;
 }
